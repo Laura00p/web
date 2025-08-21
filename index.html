@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<haed>
+    <meta charset="UTF">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>modern website</title>
+    <link rel="stylesheet" href="styles.css">
+</haed>
+<body>
+
+    <script>
+  if (!localStorage.getItem("isLoggedIn")) {
+    alert("Silakan Daftar terlebih dahulu.");
+    window.location.href = "login.html";
+  }
+</script>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>Brand</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="services">Services</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div> 
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-container">
+                    <h2>Welcome to Our Website</h2>
+                    <p>We create beautiful nd functional website for businesses and individuals.</p>
+                    <a href="home.html" class="cta-button">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="content">
+                <div class="about-container">
+                    <div class="about-image">
+                        <img src="https://static.vecteezy.com/system/resources/previews/007/932/867/non_2x/about-us-button-about-us-text-template-for-website-about-us-icon-flat-style-vector.jpg" alt="About Us">
+                    </div>
+                    <div class="about-text">
+                        <h3>About Us</h3>
+                        <p>We are a passionate team of designers and developers dedicated to creating exceptional digital experiences. With over 10 years of experience in the industry, we've helped numerous businesses achieve their online goals.</p>
+                        <p>Our approach combines innovative design with cutting-edge technology to deliver websites that not only look great but also perform exceptionally well.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h3>Our Services</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🎨</div>
+                        <h4>Web Design</h4>
+                        <p>Beautiful, responsive designs tailored to your brand and audience.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h4>Web Development</h4>
+                        <p>Custom websites built with the latest technologies and best practices.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h4>Mobile Apps</h4>
+                        <p>Native and cross-platform mobile applications for iOS and Android.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔍</div>
+                        <h4>SEO</h4>
+                        <p>Optimize your website to rank higher in search engine results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h3>Contact Us</h3>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <h4>Address</h4>
+                            <p>123 Main Street, City, Country</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Phone</h4>
+                            <p>+62 222 333 444 555</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Email</h4>
+                            <p>info@example.com</p>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Brand. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js">
+        // cek apakah pengguna sudah login 
+        if (!localStorage.getItem("isloggedlng")) {
+            window.location.href = "login.html"; //
+        }
+    </script>
+</body>
+</html>
